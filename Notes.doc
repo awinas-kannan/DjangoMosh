@@ -1,0 +1,98 @@
+
+### Programming with Mosh
+ -> 
+Django Fundamentals :
+ -> Free & Open source framework to develop web apps using python..
+   -> Some other frameworks 
+      -> Flask 
+      -> Tornado
+      -> Bottle
+      -> Falcon
+      -> Hug
+
+  Django Features-
+   -> Admin Interface (admin site)
+   -> ORM
+   -> Authentication
+   -> Caching
+
+  Performance is not everything
+  ->Maturity
+  ->Stability
+  ->Community
+  
+  How Web works:
+   -> 
+
+  Set up Dev env:    
+   -> Download python from python.org
+   -> python3 --version
+   -> pip3 install pipenv (used to install app dependency into app virtual env)
+   -> pip3 --version  
+   -> VS Code
+   -> install python extension in vs code
+
+ First Django Project
+   -> pip3 install pipenv   
+   -> mkdir PROJ_NAME
+   -> cd PROJ_NAME
+   -> pipenv install django (created Django Inside virtual env)
+✔ Successfully created virtual environment!
+Virtualenv location: /Users/a0m0rtj/.virtualenvs/DjangoMosh-I24ITtZt      
+   -> ls -> Pipfile Pipfile.lock
+      -> Pip File is like -> POM file / Package.json file 
+   -> code .
+   -> pipenv shell (active virtual env)
+   -> django-admin startproject proj_name . (Dot means current dir as project dir otherwise 2 folders will be created)
+   -> manage.py is wrapper of django-admin.Use it for running apps
+   -> python3 manage.py runserver <PORT_NUM>
+   -> 
+
+ Using Integrated terminal in VS code
+   -> pipenv --venv
+   -> 
+ 
+ Creating Your First App
+  -> INSTALLED_APPS =[]   
+  -> python3 manage.py startapp playground
+  -> apps.py -> config file
+  -> views.py -> controller/req handler/service
+  -> Register your app in INSTALLED_APPS
+
+ Views :
+  -> Takes Request Returns Response
+  -> 
+ Mapping URLs with Views
+ Main Urls.py says like all requests for playground should go to playground app
+
+ Templates:
+  -> Refer Telusco
+
+  Dubuggin Django Apps In Vs Code
+  Create launch.json -> Select Django
+
+  Run APP :
+   ctrl + f5
+ 
+ Django Install toolbar:
+ https://django-debug-toolbar.readthedocs.io/en/latest/
+ 
+ pip install django-debug-toolbar
+
+ toolbar occurs oly if we return proper html doc
+
+ Models:
+ Building an E-Commerce Data Model 
+ Product
+  titile
+  desc
+  price
+  inventorty
+
+ Collection
+  title
+
+ Collection can have multiple prods
+   
+  
+
