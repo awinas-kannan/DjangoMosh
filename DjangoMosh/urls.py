@@ -19,7 +19,9 @@ from django.urls import path ,include
 
 
 urlpatterns = [
+     path('', include('playground.urls')),
      path('playground/', include('playground.urls')),
+     path('api/', include('myapis.urls')),
      path('admin/', admin.site.urls),
      path("__debug__/", include("debug_toolbar.urls")),
 ]
