@@ -2,5 +2,6 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-   path('get/',views.getData)
+   path('get/',views.getData),
+   path('post/',views.saveData)
 ]
